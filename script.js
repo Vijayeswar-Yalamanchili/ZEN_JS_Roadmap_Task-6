@@ -89,7 +89,7 @@
 // Ans :
 
 class Uberprice{
-    constructor(km,price){
+    constructor(km,price=50){
        this.cost = price;
        this.kilometer = km
     }
@@ -97,6 +97,8 @@ class Uberprice{
         return this.kilometer * this.cost;
     }
 }
-let p1 = new Uberprice(5,50);
+let p1 = new Uberprice(5,60);
+let p2 = new Uberprice(5);
 p1.cost = 125;
 console.log(p1.price);
+console.log(p2.price);
