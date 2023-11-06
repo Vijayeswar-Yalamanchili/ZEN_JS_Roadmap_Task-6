@@ -18,7 +18,7 @@
 // console.log(movie2.studio);
 // console.log(movie2.rating);
 
-
+// ------------------------------------------------------------------------------------------------------------------------------
 
 // Q2  : https://github.com/rvsp/typescript-oops/blob/master/Practice/class-circle.md
 // Ans : 
@@ -63,8 +63,7 @@
 // circle1.color = "blue";
 // console.log("reassigned color value is by setting(setter) : " + " " +circle1.colorCircle);
 
-
-
+// -------------------------------------------------------------------------------------------------------------------------------
 
 // Q3  : Write a “person” class to hold all the details.
 // Ans : 
@@ -84,6 +83,20 @@
 // console.log(person1.gender);
 // console.log(person1.salary);
 
+// -------------------------------------------------------------------------------------------------------------------------------
+
 // Q4  : write a class to calculate the uber price.
 // Ans :
 
+class Uberprice{
+    constructor(km,price){
+       this.cost = price;
+       this.kilometer = km
+    }
+    get price(){
+        return this.kilometer * this.cost;
+    }
+}
+let p1 = new Uberprice(5,50);
+p1.cost = 125;
+console.log(p1.price);
